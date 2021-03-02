@@ -83,9 +83,39 @@ namespace Paper_Scissors_Rock.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Rock_Covered_In_Toilet_Paper {
+            get {
+                object obj = ResourceManager.GetObject("Rock_Covered_In_Toilet_Paper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Scissors {
             get {
                 object obj = ResourceManager.GetObject("Scissors", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Smashed_Hand {
+            get {
+                object obj = ResourceManager.GetObject("Smashed_Hand", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tp_Cut {
+            get {
+                object obj = ResourceManager.GetObject("Tp_Cut", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

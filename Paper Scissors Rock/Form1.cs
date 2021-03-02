@@ -46,5 +46,10 @@ namespace Paper_Scissors_Rock
         {
             picRock.SizeMode = PictureBoxSizeMode.StretchImage;
         }
+
+        private void picPaper_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

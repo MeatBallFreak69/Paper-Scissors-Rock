@@ -127,4 +127,13 @@
   <data name="Rock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Rock_Covered_In_Toilet_Paper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rock Covered In Toilet Paper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Smashed_Hand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Smashed Hand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tp_Cut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tp Cut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

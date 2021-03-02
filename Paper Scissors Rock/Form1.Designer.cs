@@ -68,6 +68,7 @@
             this.picPaper.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picPaper.TabIndex = 0;
             this.picPaper.TabStop = false;
+            this.picPaper.Click += new System.EventHandler(this.picPaper_Click);
             this.picPaper.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picPaper_MouseDown);
             this.picPaper.MouseHover += new System.EventHandler(this.picPaper_MouseHover);
             // 
