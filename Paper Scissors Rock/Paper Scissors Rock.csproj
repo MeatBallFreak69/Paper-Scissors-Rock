@@ -98,5 +98,11 @@
   <ItemGroup>
     <None Include="Resources\Rock Covered In Toilet Paper.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question Mark.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

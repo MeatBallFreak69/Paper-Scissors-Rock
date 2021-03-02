@@ -28,14 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.lblInstructions = new System.Windows.Forms.Label();
+            this.lblComputer = new System.Windows.Forms.Label();
+            this.picCombination = new System.Windows.Forms.PictureBox();
+            this.picComputer = new System.Windows.Forms.PictureBox();
             this.picRock = new System.Windows.Forms.PictureBox();
             this.picScissors = new System.Windows.Forms.PictureBox();
             this.picPaper = new System.Windows.Forms.PictureBox();
-            this.lblInstructions = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.picCombination)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picComputer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picScissors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPaper)).BeginInit();
             this.SuspendLayout();
+            // 
+            // lblInstructions
+            // 
+            this.lblInstructions.AutoSize = true;
+            this.lblInstructions.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInstructions.Location = new System.Drawing.Point(84, 9);
+            this.lblInstructions.Name = "lblInstructions";
+            this.lblInstructions.Size = new System.Drawing.Size(619, 20);
+            this.lblInstructions.TabIndex = 3;
+            this.lblInstructions.Text = "Please select a move and the computer will play a random move against you ";
+            // 
+            // lblComputer
+            // 
+            this.lblComputer.AutoSize = true;
+            this.lblComputer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblComputer.Location = new System.Drawing.Point(338, 479);
+            this.lblComputer.Name = "lblComputer";
+            this.lblComputer.Size = new System.Drawing.Size(87, 20);
+            this.lblComputer.TabIndex = 4;
+            this.lblComputer.Text = "Computer";
+            // 
+            // picCombination
+            // 
+            this.picCombination.Image = global::Paper_Scissors_Rock.Properties.Resources.Plus;
+            this.picCombination.Location = new System.Drawing.Point(298, 188);
+            this.picCombination.Name = "picCombination";
+            this.picCombination.Size = new System.Drawing.Size(169, 141);
+            this.picCombination.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCombination.TabIndex = 6;
+            this.picCombination.TabStop = false;
+            // 
+            // picComputer
+            // 
+            this.picComputer.Image = global::Paper_Scissors_Rock.Properties.Resources.question_Mark;
+            this.picComputer.Location = new System.Drawing.Point(298, 335);
+            this.picComputer.Name = "picComputer";
+            this.picComputer.Size = new System.Drawing.Size(169, 141);
+            this.picComputer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picComputer.TabIndex = 5;
+            this.picComputer.TabStop = false;
             // 
             // picRock
             // 
@@ -72,20 +117,14 @@
             this.picPaper.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picPaper_MouseDown);
             this.picPaper.MouseHover += new System.EventHandler(this.picPaper_MouseHover);
             // 
-            // lblInstructions
-            // 
-            this.lblInstructions.AutoSize = true;
-            this.lblInstructions.Location = new System.Drawing.Point(188, 9);
-            this.lblInstructions.Name = "lblInstructions";
-            this.lblInstructions.Size = new System.Drawing.Size(369, 13);
-            this.lblInstructions.TabIndex = 3;
-            this.lblInstructions.Text = "Please select a move and the computer will play a random move against you ";
-            // 
             // frmPaperScissorsRock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 505);
+            this.Controls.Add(this.picCombination);
+            this.Controls.Add(this.picComputer);
+            this.Controls.Add(this.lblComputer);
             this.Controls.Add(this.lblInstructions);
             this.Controls.Add(this.picRock);
             this.Controls.Add(this.picScissors);
@@ -93,6 +132,8 @@
             this.Name = "frmPaperScissorsRock";
             this.Text = "Paper Scissors Rock";
             this.MouseHover += new System.EventHandler(this.frmPaperScissorsRock_MouseHover);
+            ((System.ComponentModel.ISupportInitialize)(this.picCombination)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picComputer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picScissors)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPaper)).EndInit();
@@ -107,6 +148,9 @@
         private System.Windows.Forms.PictureBox picScissors;
         private System.Windows.Forms.PictureBox picRock;
         private System.Windows.Forms.Label lblInstructions;
+        private System.Windows.Forms.Label lblComputer;
+        private System.Windows.Forms.PictureBox picComputer;
+        private System.Windows.Forms.PictureBox picCombination;
     }
 }
 

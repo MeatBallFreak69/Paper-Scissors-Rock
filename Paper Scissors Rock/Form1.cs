@@ -26,25 +26,25 @@ namespace Paper_Scissors_Rock
 
         private void picPaper_MouseHover(object sender, EventArgs e)
         {
-            picPaper.SizeMode = PictureBoxSizeMode.StretchImage;
+            picPaper.Size = new Size(204, 170);
         }
 
         private void frmPaperScissorsRock_MouseHover(object sender, EventArgs e)
         {
-            picPaper.SizeMode = PictureBoxSizeMode.Zoom;
-            picScissors.SizeMode = PictureBoxSizeMode.Zoom;
-            picRock.SizeMode = PictureBoxSizeMode.Zoom;
+            picPaper.Size = new Size(169, 141);
+            picScissors.Size = new Size(169, 141);
+            picRock.Size = new Size(169, 141);
 
         }
 
         private void picScissors_MouseHover(object sender, EventArgs e)
         {
-            picScissors.SizeMode = PictureBoxSizeMode.StretchImage;
+            picScissors.Size = new Size(204, 170);
         }
 
         private void picRock_MouseHover(object sender, EventArgs e)
         {
-            picRock.SizeMode = PictureBoxSizeMode.StretchImage;
+            picRock.Size = new Size(204, 170);
         }
 
         private void picPaper_Click(object sender, EventArgs e)
