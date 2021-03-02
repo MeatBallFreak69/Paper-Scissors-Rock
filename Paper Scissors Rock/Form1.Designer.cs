@@ -31,6 +31,7 @@
             this.picRock = new System.Windows.Forms.PictureBox();
             this.picScissors = new System.Windows.Forms.PictureBox();
             this.picPaper = new System.Windows.Forms.PictureBox();
+            this.lblInstructions = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picRock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picScissors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPaper)).BeginInit();
@@ -39,7 +40,7 @@
             // picRock
             // 
             this.picRock.Image = global::Paper_Scissors_Rock.Properties.Resources.Rock;
-            this.picRock.Location = new System.Drawing.Point(362, 12);
+            this.picRock.Location = new System.Drawing.Point(473, 41);
             this.picRock.Name = "picRock";
             this.picRock.Size = new System.Drawing.Size(169, 141);
             this.picRock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -50,7 +51,7 @@
             // picScissors
             // 
             this.picScissors.Image = global::Paper_Scissors_Rock.Properties.Resources.Scissors;
-            this.picScissors.Location = new System.Drawing.Point(187, 12);
+            this.picScissors.Location = new System.Drawing.Point(298, 41);
             this.picScissors.Name = "picScissors";
             this.picScissors.Size = new System.Drawing.Size(169, 141);
             this.picScissors.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -61,7 +62,7 @@
             // picPaper
             // 
             this.picPaper.Image = global::Paper_Scissors_Rock.Properties.Resources._5893958b8370b70e212f3e62;
-            this.picPaper.Location = new System.Drawing.Point(12, 12);
+            this.picPaper.Location = new System.Drawing.Point(123, 41);
             this.picPaper.Name = "picPaper";
             this.picPaper.Size = new System.Drawing.Size(169, 141);
             this.picPaper.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -70,11 +71,21 @@
             this.picPaper.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picPaper_MouseDown);
             this.picPaper.MouseHover += new System.EventHandler(this.picPaper_MouseHover);
             // 
+            // lblInstructions
+            // 
+            this.lblInstructions.AutoSize = true;
+            this.lblInstructions.Location = new System.Drawing.Point(188, 9);
+            this.lblInstructions.Name = "lblInstructions";
+            this.lblInstructions.Size = new System.Drawing.Size(369, 13);
+            this.lblInstructions.TabIndex = 3;
+            this.lblInstructions.Text = "Please select a move and the computer will play a random move against you ";
+            // 
             // frmPaperScissorsRock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblInstructions);
             this.Controls.Add(this.picRock);
             this.Controls.Add(this.picScissors);
             this.Controls.Add(this.picPaper);
@@ -85,6 +96,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picScissors)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPaper)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -93,6 +105,7 @@
         private System.Windows.Forms.PictureBox picPaper;
         private System.Windows.Forms.PictureBox picScissors;
         private System.Windows.Forms.PictureBox picRock;
+        private System.Windows.Forms.Label lblInstructions;
     }
 }
 
