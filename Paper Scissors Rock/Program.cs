@@ -16,7 +16,7 @@ namespace Paper_Scissors_Rock
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmPaperScissorsRock());
         }
     }
 }
