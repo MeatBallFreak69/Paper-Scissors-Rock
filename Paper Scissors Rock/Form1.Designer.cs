@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblInstructions = new System.Windows.Forms.Label();
             this.lblComputer = new System.Windows.Forms.Label();
             this.picCombination = new System.Windows.Forms.PictureBox();
@@ -35,6 +36,9 @@
             this.picRock = new System.Windows.Forms.PictureBox();
             this.picScissors = new System.Windows.Forms.PictureBox();
             this.picPaper = new System.Windows.Forms.PictureBox();
+            this.tmrPaperScissors = new System.Windows.Forms.Timer(this.components);
+            this.tmrScissorsRock = new System.Windows.Forms.Timer(this.components);
+            this.tmrRockPaper = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picCombination)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picComputer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRock)).BeginInit();
@@ -113,9 +117,12 @@
             this.picPaper.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picPaper.TabIndex = 0;
             this.picPaper.TabStop = false;
-            this.picPaper.Click += new System.EventHandler(this.picPaper_Click);
             this.picPaper.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picPaper_MouseDown);
             this.picPaper.MouseHover += new System.EventHandler(this.picPaper_MouseHover);
+            // 
+            // tmrPaperScissors
+            // 
+            this.tmrPaperScissors.Tick += new System.EventHandler(this.tmrPaperScissors_Tick);
             // 
             // frmPaperScissorsRock
             // 
@@ -131,6 +138,7 @@
             this.Controls.Add(this.picPaper);
             this.Name = "frmPaperScissorsRock";
             this.Text = "Paper Scissors Rock";
+            this.Load += new System.EventHandler(this.frmPaperScissorsRock_Load);
             this.MouseHover += new System.EventHandler(this.frmPaperScissorsRock_MouseHover);
             ((System.ComponentModel.ISupportInitialize)(this.picCombination)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picComputer)).EndInit();
@@ -151,6 +159,9 @@
         private System.Windows.Forms.Label lblComputer;
         private System.Windows.Forms.PictureBox picComputer;
         private System.Windows.Forms.PictureBox picCombination;
+        private System.Windows.Forms.Timer tmrPaperScissors;
+        private System.Windows.Forms.Timer tmrScissorsRock;
+        private System.Windows.Forms.Timer tmrRockPaper;
     }
 }
 
