@@ -55,6 +55,7 @@
             this.lblInstructions.Size = new System.Drawing.Size(619, 20);
             this.lblInstructions.TabIndex = 3;
             this.lblInstructions.Text = "Please select a move and the computer will play a random move against you ";
+            this.lblInstructions.MouseHover += new System.EventHandler(this.lblInstructions_MouseHover);
             // 
             // lblComputer
             // 
@@ -65,6 +66,7 @@
             this.lblComputer.Size = new System.Drawing.Size(87, 20);
             this.lblComputer.TabIndex = 4;
             this.lblComputer.Text = "Computer";
+            this.lblComputer.MouseHover += new System.EventHandler(this.lblComputer_MouseHover);
             // 
             // picCombination
             // 
@@ -75,6 +77,7 @@
             this.picCombination.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picCombination.TabIndex = 6;
             this.picCombination.TabStop = false;
+            this.picCombination.MouseHover += new System.EventHandler(this.picCombination_MouseHover);
             // 
             // picComputer
             // 
@@ -85,6 +88,7 @@
             this.picComputer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picComputer.TabIndex = 5;
             this.picComputer.TabStop = false;
+            this.picComputer.MouseHover += new System.EventHandler(this.picComputer_MouseHover);
             // 
             // picRock
             // 
@@ -95,6 +99,7 @@
             this.picRock.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picRock.TabIndex = 2;
             this.picRock.TabStop = false;
+            this.picRock.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picRock_MouseDown);
             this.picRock.MouseHover += new System.EventHandler(this.picRock_MouseHover);
             // 
             // picScissors
@@ -106,6 +111,7 @@
             this.picScissors.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picScissors.TabIndex = 1;
             this.picScissors.TabStop = false;
+            this.picScissors.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picScissors_MouseDown);
             this.picScissors.MouseHover += new System.EventHandler(this.picScissors_MouseHover);
             // 
             // picPaper
@@ -138,7 +144,6 @@
             this.Controls.Add(this.picPaper);
             this.Name = "frmPaperScissorsRock";
             this.Text = "Paper Scissors Rock";
-            this.Load += new System.EventHandler(this.frmPaperScissorsRock_Load);
             this.MouseHover += new System.EventHandler(this.frmPaperScissorsRock_MouseHover);
             ((System.ComponentModel.ISupportInitialize)(this.picCombination)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picComputer)).EndInit();
