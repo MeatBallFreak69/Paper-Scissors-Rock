@@ -59,22 +59,6 @@ namespace Paper_Scissors_Rock
         private void frmPaperScissorsRock_Load(object sender, EventArgs e)
         {
             
-            while (done == false)
-            {
-                if (userSelection == paper && botSelection == scissors) 
-                {
-                    playerWin = false;
-                }
-                else if (userSelection == scissors && botSelection == rock)
-                {
-                    playerWin = false;
-                }
-                else if (userSelection == rock && botSelection == paper)
-                {
-                    playerWin = false;
-                }
-
-            }
 
         }
 
