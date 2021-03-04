@@ -104,5 +104,14 @@
   <ItemGroup>
     <None Include="Resources\question Mark.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TieRock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TieScissors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TieTp.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

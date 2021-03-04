@@ -31,14 +31,18 @@
             this.components = new System.ComponentModel.Container();
             this.lblInstructions = new System.Windows.Forms.Label();
             this.lblComputer = new System.Windows.Forms.Label();
+            this.tmrPaperScissors = new System.Windows.Forms.Timer(this.components);
+            this.tmrScissorsRock = new System.Windows.Forms.Timer(this.components);
+            this.tmrRockPaper = new System.Windows.Forms.Timer(this.components);
+            this.tmrTiePaper = new System.Windows.Forms.Timer(this.components);
+            this.tmrTieScissors = new System.Windows.Forms.Timer(this.components);
+            this.tmrTieRock = new System.Windows.Forms.Timer(this.components);
             this.picCombination = new System.Windows.Forms.PictureBox();
             this.picComputer = new System.Windows.Forms.PictureBox();
             this.picRock = new System.Windows.Forms.PictureBox();
             this.picScissors = new System.Windows.Forms.PictureBox();
             this.picPaper = new System.Windows.Forms.PictureBox();
-            this.tmrPaperScissors = new System.Windows.Forms.Timer(this.components);
-            this.tmrScissorsRock = new System.Windows.Forms.Timer(this.components);
-            this.tmrRockPaper = new System.Windows.Forms.Timer(this.components);
+            this.tmrERPS = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picCombination)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picComputer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRock)).BeginInit();
@@ -67,6 +71,30 @@
             this.lblComputer.TabIndex = 4;
             this.lblComputer.Text = "Computer";
             this.lblComputer.MouseHover += new System.EventHandler(this.lblComputer_MouseHover);
+            // 
+            // tmrPaperScissors
+            // 
+            this.tmrPaperScissors.Tick += new System.EventHandler(this.tmrPaperScissors_Tick);
+            // 
+            // tmrScissorsRock
+            // 
+            this.tmrScissorsRock.Tick += new System.EventHandler(this.tmrScissorsRock_Tick);
+            // 
+            // tmrRockPaper
+            // 
+            this.tmrRockPaper.Tick += new System.EventHandler(this.tmrRockPaper_Tick);
+            // 
+            // tmrTiePaper
+            // 
+            this.tmrTiePaper.Tick += new System.EventHandler(this.tmrTiePaper_Tick);
+            // 
+            // tmrTieScissors
+            // 
+            this.tmrTieScissors.Tick += new System.EventHandler(this.tmrTieScissors_Tick);
+            // 
+            // tmrTieRock
+            // 
+            this.tmrTieRock.Tick += new System.EventHandler(this.tmrTieRock_Tick);
             // 
             // picCombination
             // 
@@ -126,9 +154,9 @@
             this.picPaper.MouseDown += new System.Windows.Forms.MouseEventHandler(this.picPaper_MouseDown);
             this.picPaper.MouseHover += new System.EventHandler(this.picPaper_MouseHover);
             // 
-            // tmrPaperScissors
+            // tmrERPS
             // 
-            this.tmrPaperScissors.Tick += new System.EventHandler(this.tmrPaperScissors_Tick);
+            this.tmrERPS.Tick += new System.EventHandler(this.tmrERPS_Tick);
             // 
             // frmPaperScissorsRock
             // 
@@ -167,6 +195,10 @@
         private System.Windows.Forms.Timer tmrPaperScissors;
         private System.Windows.Forms.Timer tmrScissorsRock;
         private System.Windows.Forms.Timer tmrRockPaper;
+        private System.Windows.Forms.Timer tmrTiePaper;
+        private System.Windows.Forms.Timer tmrTieScissors;
+        private System.Windows.Forms.Timer tmrTieRock;
+        private System.Windows.Forms.Timer tmrERPS;
     }
 }
 
