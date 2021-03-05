@@ -113,5 +113,14 @@
   <ItemGroup>
     <None Include="Resources\TieTp.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paper.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rock.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scissors.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

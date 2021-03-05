@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -12,6 +13,7 @@ namespace Paper_Scissors_Rock
 {
     public partial class frmPaperScissorsRock : Form
     {
+        SoundPlayer sound;
         int userSelection = 0;
         int botSelection = 0;
         bool playerWin = false;
