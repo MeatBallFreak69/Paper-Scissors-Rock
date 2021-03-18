@@ -24,7 +24,7 @@ namespace Paper_Scissors_Rock
         int paperTieTick = 0;
         int scissorsTieTick = 0;
         int rockTieTick = 0;
-        int randomEnemyMoveDisplayTick = 0;
+        int randomEnemyMoveDisplayTick = 0;   
         Random enemyMoveDisplay = new Random();
         Random enemyTurn = new Random();
         int enemyMoveDisplayValue = 0;
