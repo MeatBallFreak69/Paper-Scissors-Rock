@@ -32,7 +32,6 @@ namespace Paper_Scissors_Rock
         {
             InitializeComponent();
         }
-
         private void picPaper_MouseDown(object sender, MouseEventArgs e)
         {
             userSelection = 1;
@@ -42,7 +41,6 @@ namespace Paper_Scissors_Rock
             }
             System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Hand;
         }
-
         private void picPaper_MouseHover(object sender, EventArgs e)
         {
             if (botSelection == 0) 
@@ -54,7 +52,6 @@ namespace Paper_Scissors_Rock
             picRock.Size = new Size(169, 141);
             System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Hand;
         }
-
         private void frmPaperScissorsRock_MouseHover(object sender, EventArgs e)
         {
             picPaper.Size = new Size(169, 141);
@@ -63,7 +60,6 @@ namespace Paper_Scissors_Rock
             System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
 
         }
-
         private void picScissors_MouseHover(object sender, EventArgs e)
         {
             if (botSelection == 0)
@@ -75,7 +71,6 @@ namespace Paper_Scissors_Rock
             System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Hand;
 
         }
-
         private void picRock_MouseHover(object sender, EventArgs e)
         {
             if (botSelection == 0)
@@ -86,7 +81,6 @@ namespace Paper_Scissors_Rock
             picScissors.Size = new Size(169, 141);
             System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Hand;
         }
-
         private void tmrPaperScissors_Tick(object sender, EventArgs e)
         {
             paperScissorsTick += 1;
@@ -109,14 +103,17 @@ namespace Paper_Scissors_Rock
                 if (playerWin == true)
                 {
                     MessageBox.Show("Nice, you won!", "Congratulations!");
+                    lstBoxScores.Items.Add("Player Win");
                 }
                 else if (playerWin == false)
                 {
                     MessageBox.Show("Sorry, you lost!", "Sorry!");
+                    lstBoxScores.Items.Add("Player Loss");
                 }
                 else if (playerTie == true)
                 {
                     MessageBox.Show("Nice, you tied!", "Tie!");
+                    lstBoxScores.Items.Add("Player Tie");
                 }
                 botSelection = 0;
                 picPaper.BackColor = Color.Transparent;
@@ -124,7 +121,6 @@ namespace Paper_Scissors_Rock
                 picRock.BackColor = Color.Transparent;
             }
         }
-
         private void picCombination_MouseHover(object sender, EventArgs e)
         {
             picPaper.Size = new Size(169, 141);
@@ -132,7 +128,6 @@ namespace Paper_Scissors_Rock
             picRock.Size = new Size(169, 141);
             System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
         }
-
         private void picComputer_MouseHover(object sender, EventArgs e)
         {
             picPaper.Size = new Size(169, 141);
@@ -140,7 +135,6 @@ namespace Paper_Scissors_Rock
             picRock.Size = new Size(169, 141);
             System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
         }
-
         private void lblInstructions_MouseHover(object sender, EventArgs e)
         {
             picPaper.Size = new Size(169, 141);
@@ -148,7 +142,6 @@ namespace Paper_Scissors_Rock
             picRock.Size = new Size(169, 141);
             System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
         }
-
         private void lblComputer_MouseHover(object sender, EventArgs e)
         {
             picPaper.Size = new Size(169, 141);
@@ -156,7 +149,6 @@ namespace Paper_Scissors_Rock
             picRock.Size = new Size(169, 141);
             System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Default;
         }
-
         private void picScissors_MouseDown(object sender, MouseEventArgs e)
         {
             userSelection = 2;
@@ -166,7 +158,6 @@ namespace Paper_Scissors_Rock
             }
             System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Hand;
         }
-
         private void picRock_MouseDown(object sender, MouseEventArgs e)
         {
             userSelection = 3;
@@ -176,7 +167,6 @@ namespace Paper_Scissors_Rock
             }
             System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Hand;
         }
-
         private void tmrScissorsRock_Tick(object sender, EventArgs e)
         {
             scissorsRockTick += 1;
@@ -199,14 +189,18 @@ namespace Paper_Scissors_Rock
                 if (playerWin == true)
                 {
                     MessageBox.Show("Nice, you won!", "Congratulations!");
+                    lstBoxScores.Items.Add("Player Win");
                 }
                 else if (playerWin == false)
                 {
                     MessageBox.Show("Sorry, you lost!", "Sorry!");
+
+                    lstBoxScores.Items.Add("Player Loss");
                 }
                 else if (playerTie == true)
                 {
                     MessageBox.Show("Nice, you tied!", "Tie!");
+                    lstBoxScores.Items.Add("Player Tie");
                 }
                 botSelection = 0;
                 picPaper.BackColor = Color.Transparent;
@@ -214,7 +208,6 @@ namespace Paper_Scissors_Rock
                 picRock.BackColor = Color.Transparent;
             }
         }
-
         private void tmrRockPaper_Tick(object sender, EventArgs e)
         {
             rockPaperTick += 1;
@@ -237,14 +230,17 @@ namespace Paper_Scissors_Rock
                 if (playerWin == true)
                 {
                     MessageBox.Show("Nice, you won!", "Congratulations!");
+                    lstBoxScores.Items.Add("Player Win");
                 }
                 else if (playerWin == false)
                 {
                     MessageBox.Show("Sorry, you lost!", "Sorry!");
+                    lstBoxScores.Items.Add("Player Loss");
                 }
                 else if (playerTie == true)
                 {
                     MessageBox.Show("Nice, you tied!", "Tie!");
+                    lstBoxScores.Items.Add("Player Tie");
                 }
                 botSelection = 0;
                 picPaper.BackColor = Color.Transparent;
@@ -252,12 +248,10 @@ namespace Paper_Scissors_Rock
                 picRock.BackColor = Color.Transparent;
             }
         }
-
         private void picPaper_MouseUp(object sender, MouseEventArgs e)
         {
             tmrERPS.Start();
         }
-
         private void tmrTiePaper_Tick(object sender, EventArgs e)
         {
             paperTieTick += 1;
@@ -273,17 +267,10 @@ namespace Paper_Scissors_Rock
             {
                 paperTieTick = 0;
                 tmrTiePaper.Stop();
-                if (playerWin == true)
-                {
-                    MessageBox.Show("Nice, you won!", "Congratulations!");
-                }
-                else if (playerWin == false)
-                {
-                    MessageBox.Show("Sorry, you lost!", "Sorry!");
-                }
-                else if (playerTie == true)
+                if (playerTie == true)
                 {
                     MessageBox.Show("Nice, you tied!", "Tie!");
+                    lstBoxScores.Items.Add("Player Tie");
                 }
                 botSelection = 0;
                 picPaper.BackColor = Color.Transparent;
@@ -291,7 +278,6 @@ namespace Paper_Scissors_Rock
                 picRock.BackColor = Color.Transparent;
             }
         }
-
         private void tmrTieScissors_Tick(object sender, EventArgs e)
         {
             scissorsTieTick += 1;
@@ -307,17 +293,10 @@ namespace Paper_Scissors_Rock
             {
                 scissorsTieTick = 0;
                 tmrTieScissors.Stop();
-                if (playerWin == true)
-                {
-                    MessageBox.Show("Nice, you won!", "Congratulations!");
-                }
-                else if (playerWin == false)
-                {
-                    MessageBox.Show("Sorry, you lost!", "Sorry!");
-                }
-                else if (playerTie == true)
+                if (playerTie == true)
                 {
                     MessageBox.Show("Nice, you tied!", "Tie!");
+                    lstBoxScores.Items.Add("Player Tie");
                 }
                 botSelection = 0;
                 picPaper.BackColor = Color.Transparent;
@@ -325,7 +304,6 @@ namespace Paper_Scissors_Rock
                 picRock.BackColor = Color.Transparent;
             }
         }
-
         private void tmrTieRock_Tick(object sender, EventArgs e)
         {
             rockTieTick += 1;
@@ -341,17 +319,10 @@ namespace Paper_Scissors_Rock
             {
                 tmrTieRock.Stop();
                 rockTieTick = 0;
-                if (playerWin == true)
-                {
-                    MessageBox.Show("Nice, you won!", "Congratulations!");
-                }
-                else if (playerWin == false)
-                {
-                    MessageBox.Show("Sorry, you lost!", "Sorry!");
-                }
-                else if (playerTie == true)
+                if (playerTie == true)
                 {
                     MessageBox.Show("Nice, you tied!", "Tie!");
+                    lstBoxScores.Items.Add("Player Tie");
                 }
                 botSelection = 0;
                 picPaper.BackColor = Color.Transparent;
@@ -359,7 +330,6 @@ namespace Paper_Scissors_Rock
                 picRock.BackColor = Color.Transparent;
             }
         }
-
         private void tmrERPS_Tick(object sender, EventArgs e)
         {
             picCombination.Image = Paper_Scissors_Rock.Properties.Resources.Plus;
@@ -482,6 +452,17 @@ namespace Paper_Scissors_Rock
                 tmrERPS.Stop();
             }
         }
+
+        private void frmPaperScissorsRock_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnInstructions_Click(object sender, EventArgs e)
+        {
+            frmInstructions formInstructions = new frmInstructions();
+            formInstructions.ShowDialog();
+
+        }
     }
 }
-

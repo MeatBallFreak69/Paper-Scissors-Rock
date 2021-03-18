@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.lblInstructions = new System.Windows.Forms.Label();
             this.lblComputer = new System.Windows.Forms.Label();
             this.tmrPaperScissors = new System.Windows.Forms.Timer(this.components);
             this.tmrScissorsRock = new System.Windows.Forms.Timer(this.components);
@@ -43,23 +42,18 @@
             this.picScissors = new System.Windows.Forms.PictureBox();
             this.picPaper = new System.Windows.Forms.PictureBox();
             this.tmrERPS = new System.Windows.Forms.Timer(this.components);
+            this.lstBoxScores = new System.Windows.Forms.ListBox();
+            this.lblScoreBoard = new System.Windows.Forms.Label();
+            this.btnInstructions = new System.Windows.Forms.Button();
+            this.lblMoney = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.picCombination)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picComputer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picScissors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPaper)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblInstructions
-            // 
-            this.lblInstructions.AutoSize = true;
-            this.lblInstructions.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInstructions.Location = new System.Drawing.Point(84, 9);
-            this.lblInstructions.Name = "lblInstructions";
-            this.lblInstructions.Size = new System.Drawing.Size(619, 20);
-            this.lblInstructions.TabIndex = 3;
-            this.lblInstructions.Text = "Please select a move and the computer will play a random move against you ";
-            this.lblInstructions.MouseHover += new System.EventHandler(this.lblInstructions_MouseHover);
             // 
             // lblComputer
             // 
@@ -158,26 +152,78 @@
             // 
             this.tmrERPS.Tick += new System.EventHandler(this.tmrERPS_Tick);
             // 
+            // lstBoxScores
+            // 
+            this.lstBoxScores.FormattingEnabled = true;
+            this.lstBoxScores.Location = new System.Drawing.Point(657, 281);
+            this.lstBoxScores.Name = "lstBoxScores";
+            this.lstBoxScores.Size = new System.Drawing.Size(131, 212);
+            this.lstBoxScores.TabIndex = 7;
+            // 
+            // lblScoreBoard
+            // 
+            this.lblScoreBoard.AutoSize = true;
+            this.lblScoreBoard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScoreBoard.Location = new System.Drawing.Point(681, 265);
+            this.lblScoreBoard.Name = "lblScoreBoard";
+            this.lblScoreBoard.Size = new System.Drawing.Size(77, 13);
+            this.lblScoreBoard.TabIndex = 8;
+            this.lblScoreBoard.Text = "Score Board";
+            // 
+            // btnInstructions
+            // 
+            this.btnInstructions.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInstructions.Location = new System.Drawing.Point(283, 12);
+            this.btnInstructions.Name = "btnInstructions";
+            this.btnInstructions.Size = new System.Drawing.Size(201, 23);
+            this.btnInstructions.TabIndex = 9;
+            this.btnInstructions.Text = "Show Instructions";
+            this.btnInstructions.UseVisualStyleBackColor = true;
+            this.btnInstructions.Click += new System.EventHandler(this.btnInstructions_Click);
+            // 
+            // lblMoney
+            // 
+            this.lblMoney.AutoSize = true;
+            this.lblMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMoney.Location = new System.Drawing.Point(12, 212);
+            this.lblMoney.Name = "lblMoney";
+            this.lblMoney.Size = new System.Drawing.Size(54, 16);
+            this.lblMoney.TabIndex = 10;
+            this.lblMoney.Text = "Money";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(15, 232);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown1.TabIndex = 11;
+            // 
             // frmPaperScissorsRock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 505);
+            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.lblMoney);
+            this.Controls.Add(this.btnInstructions);
+            this.Controls.Add(this.lblScoreBoard);
+            this.Controls.Add(this.lstBoxScores);
             this.Controls.Add(this.picCombination);
             this.Controls.Add(this.picComputer);
             this.Controls.Add(this.lblComputer);
-            this.Controls.Add(this.lblInstructions);
             this.Controls.Add(this.picRock);
             this.Controls.Add(this.picScissors);
             this.Controls.Add(this.picPaper);
             this.Name = "frmPaperScissorsRock";
             this.Text = "Paper Scissors Rock";
+            this.Load += new System.EventHandler(this.frmPaperScissorsRock_Load);
             this.MouseHover += new System.EventHandler(this.frmPaperScissorsRock_MouseHover);
             ((System.ComponentModel.ISupportInitialize)(this.picCombination)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picComputer)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picScissors)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPaper)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,7 +234,6 @@
         private System.Windows.Forms.PictureBox picPaper;
         private System.Windows.Forms.PictureBox picScissors;
         private System.Windows.Forms.PictureBox picRock;
-        private System.Windows.Forms.Label lblInstructions;
         private System.Windows.Forms.Label lblComputer;
         private System.Windows.Forms.PictureBox picComputer;
         private System.Windows.Forms.PictureBox picCombination;
@@ -199,6 +244,11 @@
         private System.Windows.Forms.Timer tmrTieScissors;
         private System.Windows.Forms.Timer tmrTieRock;
         private System.Windows.Forms.Timer tmrERPS;
+        private System.Windows.Forms.ListBox lstBoxScores;
+        private System.Windows.Forms.Label lblScoreBoard;
+        private System.Windows.Forms.Button btnInstructions;
+        private System.Windows.Forms.Label lblMoney;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }
 

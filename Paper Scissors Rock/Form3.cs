@@ -20,7 +20,6 @@ namespace Paper_Scissors_Rock
         private void btnPlayGame_Click(object sender, EventArgs e)
         {
             this.Close();
-            frmPaperScissorsRock.Show();
         }
     }
 }
