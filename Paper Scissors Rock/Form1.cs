@@ -24,7 +24,9 @@ namespace Paper_Scissors_Rock
         int paperTieTick = 0;
         int scissorsTieTick = 0;
         int rockTieTick = 0;
-        int randomEnemyMoveDisplayTick = 0;   
+        int randomEnemyMoveDisplayTick = 0;
+        double Money = 5;
+        double betAmount = 0;
         Random enemyMoveDisplay = new Random();
         Random enemyTurn = new Random();
         int enemyMoveDisplayValue = 0;
@@ -35,6 +37,7 @@ namespace Paper_Scissors_Rock
         private void picPaper_MouseDown(object sender, MouseEventArgs e)
         {
             userSelection = 1;
+            nudBet.Visible = false;
             if (botSelection == 0)
             {
                 tmrERPS.Start();
@@ -47,13 +50,15 @@ namespace Paper_Scissors_Rock
             {
                 picPaper.Size = new Size(204, 170);
             }
-            
+            sound = new SoundPlayer(Properties.Resources.Paper);
+            sound.Play();
             picScissors.Size = new Size(169, 141);
             picRock.Size = new Size(169, 141);
             System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Hand;
         }
         private void frmPaperScissorsRock_MouseHover(object sender, EventArgs e)
         {
+            sound.Stop();
             picPaper.Size = new Size(169, 141);
             picScissors.Size = new Size(169, 141);
             picRock.Size = new Size(169, 141);
@@ -66,6 +71,8 @@ namespace Paper_Scissors_Rock
             {
                 picScissors.Size = new Size(204, 170);
             }
+            sound = new SoundPlayer(Properties.Resources.Scissors1);
+            sound.Play();
             picPaper.Size = new Size(169, 141);
             picRock.Size = new Size(169, 141);
             System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Hand;
@@ -77,6 +84,8 @@ namespace Paper_Scissors_Rock
             {
                 picRock.Size = new Size(204, 170);
             }
+            sound = new SoundPlayer(Properties.Resources.Rock1);
+            sound.Play();
             picPaper.Size = new Size(169, 141);
             picScissors.Size = new Size(169, 141);
             System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Hand;
@@ -104,16 +113,17 @@ namespace Paper_Scissors_Rock
                 {
                     MessageBox.Show("Nice, you won!", "Congratulations!");
                     lstBoxScores.Items.Add("Player Win");
+                    Money += betAmount;
+                    nudBet.Visible = true;
+                    lblMoney.Text = ($"Money: ${Money}");
                 }
                 else if (playerWin == false)
                 {
                     MessageBox.Show("Sorry, you lost!", "Sorry!");
                     lstBoxScores.Items.Add("Player Loss");
-                }
-                else if (playerTie == true)
-                {
-                    MessageBox.Show("Nice, you tied!", "Tie!");
-                    lstBoxScores.Items.Add("Player Tie");
+                    Money -= betAmount;
+                    nudBet.Visible = true;
+                    lblMoney.Text = ($"Money: ${Money}");
                 }
                 botSelection = 0;
                 picPaper.BackColor = Color.Transparent;
@@ -152,6 +162,7 @@ namespace Paper_Scissors_Rock
         private void picScissors_MouseDown(object sender, MouseEventArgs e)
         {
             userSelection = 2;
+            nudBet.Visible = false;
             if (botSelection == 0)
             {
                 tmrERPS.Start();
@@ -161,6 +172,7 @@ namespace Paper_Scissors_Rock
         private void picRock_MouseDown(object sender, MouseEventArgs e)
         {
             userSelection = 3;
+            nudBet.Visible = false;
             if (botSelection == 0)
             {
                 tmrERPS.Start();
@@ -190,17 +202,17 @@ namespace Paper_Scissors_Rock
                 {
                     MessageBox.Show("Nice, you won!", "Congratulations!");
                     lstBoxScores.Items.Add("Player Win");
+                    Money += betAmount;
+                    nudBet.Visible = true;
+                    lblMoney.Text = ($"Money: ${Money}");
                 }
                 else if (playerWin == false)
                 {
                     MessageBox.Show("Sorry, you lost!", "Sorry!");
-
                     lstBoxScores.Items.Add("Player Loss");
-                }
-                else if (playerTie == true)
-                {
-                    MessageBox.Show("Nice, you tied!", "Tie!");
-                    lstBoxScores.Items.Add("Player Tie");
+                    Money -= betAmount;
+                    nudBet.Visible = true;
+                    lblMoney.Text = ($"Money: ${Money}");
                 }
                 botSelection = 0;
                 picPaper.BackColor = Color.Transparent;
@@ -231,16 +243,17 @@ namespace Paper_Scissors_Rock
                 {
                     MessageBox.Show("Nice, you won!", "Congratulations!");
                     lstBoxScores.Items.Add("Player Win");
+                    Money += betAmount;
+                    nudBet.Visible = true;
+                    lblMoney.Text = ($"Money: ${Money}");
                 }
                 else if (playerWin == false)
                 {
                     MessageBox.Show("Sorry, you lost!", "Sorry!");
                     lstBoxScores.Items.Add("Player Loss");
-                }
-                else if (playerTie == true)
-                {
-                    MessageBox.Show("Nice, you tied!", "Tie!");
-                    lstBoxScores.Items.Add("Player Tie");
+                    Money -= betAmount;
+                    nudBet.Visible = true;
+                    lblMoney.Text = ($"Money: ${Money}");
                 }
                 botSelection = 0;
                 picPaper.BackColor = Color.Transparent;
@@ -271,6 +284,9 @@ namespace Paper_Scissors_Rock
                 {
                     MessageBox.Show("Nice, you tied!", "Tie!");
                     lstBoxScores.Items.Add("Player Tie");
+                    nudBet.Value = 0;
+                    nudBet.Visible = true;
+                    lblMoney.Text = ($"Money: ${Money}");
                 }
                 botSelection = 0;
                 picPaper.BackColor = Color.Transparent;
@@ -297,6 +313,9 @@ namespace Paper_Scissors_Rock
                 {
                     MessageBox.Show("Nice, you tied!", "Tie!");
                     lstBoxScores.Items.Add("Player Tie");
+                    nudBet.Value = 0;
+                    nudBet.Visible = true;
+                    lblMoney.Text = ($"Money: ${Money}");
                 }
                 botSelection = 0;
                 picPaper.BackColor = Color.Transparent;
@@ -323,6 +342,9 @@ namespace Paper_Scissors_Rock
                 {
                     MessageBox.Show("Nice, you tied!", "Tie!");
                     lstBoxScores.Items.Add("Player Tie");
+                    nudBet.Value = 0;
+                    nudBet.Visible = true;
+                    lblMoney.Text = ($"Money: ${Money}");
                 }
                 botSelection = 0;
                 picPaper.BackColor = Color.Transparent;
@@ -455,7 +477,7 @@ namespace Paper_Scissors_Rock
 
         private void frmPaperScissorsRock_Load(object sender, EventArgs e)
         {
-
+            lblMoney.Text = ($"Money: ${Money}");
         }
 
         private void btnInstructions_Click(object sender, EventArgs e)
@@ -463,6 +485,11 @@ namespace Paper_Scissors_Rock
             frmInstructions formInstructions = new frmInstructions();
             formInstructions.ShowDialog();
 
+        }
+
+        private void nudBet_ValueChanged(object sender, EventArgs e)
+        {
+            betAmount = Convert.ToDouble(nudBet.Value);
         }
     }
 }

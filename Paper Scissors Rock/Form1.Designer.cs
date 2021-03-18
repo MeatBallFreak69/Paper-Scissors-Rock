@@ -46,13 +46,14 @@
             this.lblScoreBoard = new System.Windows.Forms.Label();
             this.btnInstructions = new System.Windows.Forms.Button();
             this.lblMoney = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.nudBet = new System.Windows.Forms.NumericUpDown();
+            this.lblBetting = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picCombination)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picComputer)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRock)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picScissors)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPaper)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudBet)).BeginInit();
             this.SuspendLayout();
             // 
             // lblComputer
@@ -187,23 +188,35 @@
             this.lblMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMoney.Location = new System.Drawing.Point(12, 212);
             this.lblMoney.Name = "lblMoney";
-            this.lblMoney.Size = new System.Drawing.Size(54, 16);
+            this.lblMoney.Size = new System.Drawing.Size(62, 16);
             this.lblMoney.TabIndex = 10;
-            this.lblMoney.Text = "Money";
+            this.lblMoney.Text = "Money: ";
             // 
-            // numericUpDown1
+            // nudBet
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(15, 232);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
-            this.numericUpDown1.TabIndex = 11;
+            this.nudBet.Location = new System.Drawing.Point(108, 242);
+            this.nudBet.Name = "nudBet";
+            this.nudBet.Size = new System.Drawing.Size(57, 20);
+            this.nudBet.TabIndex = 11;
+            this.nudBet.ValueChanged += new System.EventHandler(this.nudBet_ValueChanged);
+            // 
+            // lblBetting
+            // 
+            this.lblBetting.AutoSize = true;
+            this.lblBetting.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBetting.Location = new System.Drawing.Point(12, 242);
+            this.lblBetting.Name = "lblBetting";
+            this.lblBetting.Size = new System.Drawing.Size(90, 16);
+            this.lblBetting.TabIndex = 12;
+            this.lblBetting.Text = "Bet Amount:";
             // 
             // frmPaperScissorsRock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 505);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.lblBetting);
+            this.Controls.Add(this.nudBet);
             this.Controls.Add(this.lblMoney);
             this.Controls.Add(this.btnInstructions);
             this.Controls.Add(this.lblScoreBoard);
@@ -223,7 +236,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picRock)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picScissors)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picPaper)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudBet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,7 +261,8 @@
         private System.Windows.Forms.Label lblScoreBoard;
         private System.Windows.Forms.Button btnInstructions;
         private System.Windows.Forms.Label lblMoney;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown nudBet;
+        private System.Windows.Forms.Label lblBetting;
     }
 }
 
