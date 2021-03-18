@@ -57,6 +57,8 @@ namespace Paper_Scissors_Rock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Paper_Scissors_Rock.Properties.Resources.rock_paper_scissor_ft_1;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnPlayGame);
             this.Controls.Add(this.lblInstructions);

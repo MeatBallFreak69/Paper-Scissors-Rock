@@ -59,7 +59,9 @@
             // lblComputer
             // 
             this.lblComputer.AutoSize = true;
+            this.lblComputer.BackColor = System.Drawing.Color.Transparent;
             this.lblComputer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblComputer.ForeColor = System.Drawing.Color.White;
             this.lblComputer.Location = new System.Drawing.Point(338, 479);
             this.lblComputer.Name = "lblComputer";
             this.lblComputer.Size = new System.Drawing.Size(87, 20);
@@ -93,6 +95,7 @@
             // 
             // picCombination
             // 
+            this.picCombination.BackColor = System.Drawing.Color.Transparent;
             this.picCombination.Image = global::Paper_Scissors_Rock.Properties.Resources.Plus;
             this.picCombination.Location = new System.Drawing.Point(298, 188);
             this.picCombination.Name = "picCombination";
@@ -104,6 +107,7 @@
             // 
             // picComputer
             // 
+            this.picComputer.BackColor = System.Drawing.Color.Transparent;
             this.picComputer.Image = global::Paper_Scissors_Rock.Properties.Resources.question_Mark;
             this.picComputer.Location = new System.Drawing.Point(298, 335);
             this.picComputer.Name = "picComputer";
@@ -115,6 +119,7 @@
             // 
             // picRock
             // 
+            this.picRock.BackColor = System.Drawing.Color.Transparent;
             this.picRock.Image = global::Paper_Scissors_Rock.Properties.Resources.Rock;
             this.picRock.Location = new System.Drawing.Point(473, 41);
             this.picRock.Name = "picRock";
@@ -127,6 +132,7 @@
             // 
             // picScissors
             // 
+            this.picScissors.BackColor = System.Drawing.Color.Transparent;
             this.picScissors.Image = global::Paper_Scissors_Rock.Properties.Resources.Scissors;
             this.picScissors.Location = new System.Drawing.Point(298, 41);
             this.picScissors.Name = "picScissors";
@@ -139,6 +145,7 @@
             // 
             // picPaper
             // 
+            this.picPaper.BackColor = System.Drawing.Color.Transparent;
             this.picPaper.Image = global::Paper_Scissors_Rock.Properties.Resources._5893958b8370b70e212f3e62;
             this.picPaper.Location = new System.Drawing.Point(123, 41);
             this.picPaper.Name = "picPaper";
@@ -155,6 +162,7 @@
             // 
             // lstBoxScores
             // 
+            this.lstBoxScores.BackColor = System.Drawing.SystemColors.Window;
             this.lstBoxScores.FormattingEnabled = true;
             this.lstBoxScores.Location = new System.Drawing.Point(657, 281);
             this.lstBoxScores.Name = "lstBoxScores";
@@ -164,7 +172,9 @@
             // lblScoreBoard
             // 
             this.lblScoreBoard.AutoSize = true;
+            this.lblScoreBoard.BackColor = System.Drawing.Color.Transparent;
             this.lblScoreBoard.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblScoreBoard.ForeColor = System.Drawing.Color.White;
             this.lblScoreBoard.Location = new System.Drawing.Point(681, 265);
             this.lblScoreBoard.Name = "lblScoreBoard";
             this.lblScoreBoard.Size = new System.Drawing.Size(77, 13);
@@ -173,7 +183,7 @@
             // 
             // btnInstructions
             // 
-            this.btnInstructions.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnInstructions.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnInstructions.Location = new System.Drawing.Point(283, 12);
             this.btnInstructions.Name = "btnInstructions";
             this.btnInstructions.Size = new System.Drawing.Size(201, 23);
@@ -185,7 +195,9 @@
             // lblMoney
             // 
             this.lblMoney.AutoSize = true;
+            this.lblMoney.BackColor = System.Drawing.Color.Transparent;
             this.lblMoney.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMoney.ForeColor = System.Drawing.Color.White;
             this.lblMoney.Location = new System.Drawing.Point(12, 212);
             this.lblMoney.Name = "lblMoney";
             this.lblMoney.Size = new System.Drawing.Size(62, 16);
@@ -203,7 +215,9 @@
             // lblBetting
             // 
             this.lblBetting.AutoSize = true;
+            this.lblBetting.BackColor = System.Drawing.Color.Transparent;
             this.lblBetting.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBetting.ForeColor = System.Drawing.Color.White;
             this.lblBetting.Location = new System.Drawing.Point(12, 242);
             this.lblBetting.Name = "lblBetting";
             this.lblBetting.Size = new System.Drawing.Size(90, 16);
@@ -214,6 +228,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Paper_Scissors_Rock.Properties.Resources.rock_paper_scissor_ft_1;
             this.ClientSize = new System.Drawing.Size(800, 505);
             this.Controls.Add(this.lblBetting);
             this.Controls.Add(this.nudBet);

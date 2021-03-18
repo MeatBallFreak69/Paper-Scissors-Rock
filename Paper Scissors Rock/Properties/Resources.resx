@@ -118,46 +118,49 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Scissors" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Scissors.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="5893958b8370b70e212f3e62" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5893958b8370b70e212f3e62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Rock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Rock_Covered_In_Toilet_Paper" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Rock Covered In Toilet Paper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Smashed_Hand" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Smashed Hand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Tp_Cut" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tp Cut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Plus" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Plus.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="question_Mark" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\question Mark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TieRock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TieRock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TieScissors" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TieScissors.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TieTp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TieTp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Paper" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Paper.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="Rock1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Rock.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="TieRock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TieRock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Smashed_Hand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Smashed Hand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Scissors1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Scissors.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TieTp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TieTp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="question_Mark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\question Mark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rock_Covered_In_Toilet_Paper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rock Covered In Toilet Paper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="5893958b8370b70e212f3e62" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5893958b8370b70e212f3e62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TieScissors" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TieScissors.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tp_Cut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tp Cut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Rock1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rock.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Scissors" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Scissors.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rock-paper-scissor-ft-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rock-paper-scissor-ft-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -46,19 +46,18 @@ namespace Paper_Scissors_Rock
         }
         private void picPaper_MouseHover(object sender, EventArgs e)
         {
-            if (botSelection == 0) 
+            if (userSelection == 0) 
             {
                 picPaper.Size = new Size(204, 170);
             }
             sound = new SoundPlayer(Properties.Resources.Paper);
-            sound.Play();
+            if (userSelection == 0) sound.Play();
             picScissors.Size = new Size(169, 141);
             picRock.Size = new Size(169, 141);
             System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Hand;
         }
         private void frmPaperScissorsRock_MouseHover(object sender, EventArgs e)
         {
-            sound.Stop();
             picPaper.Size = new Size(169, 141);
             picScissors.Size = new Size(169, 141);
             picRock.Size = new Size(169, 141);
@@ -67,12 +66,12 @@ namespace Paper_Scissors_Rock
         }
         private void picScissors_MouseHover(object sender, EventArgs e)
         {
-            if (botSelection == 0)
+            if (userSelection == 0)
             {
                 picScissors.Size = new Size(204, 170);
             }
             sound = new SoundPlayer(Properties.Resources.Scissors1);
-            sound.Play();
+            if (userSelection == 0) sound.Play();
             picPaper.Size = new Size(169, 141);
             picRock.Size = new Size(169, 141);
             System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Hand;
@@ -80,12 +79,12 @@ namespace Paper_Scissors_Rock
         }
         private void picRock_MouseHover(object sender, EventArgs e)
         {
-            if (botSelection == 0)
+            if (userSelection == 0)
             {
                 picRock.Size = new Size(204, 170);
             }
             sound = new SoundPlayer(Properties.Resources.Rock1);
-            sound.Play();
+            if (userSelection == 0) sound.Play();
             picPaper.Size = new Size(169, 141);
             picScissors.Size = new Size(169, 141);
             System.Windows.Forms.Cursor.Current = System.Windows.Forms.Cursors.Hand;
@@ -116,6 +115,7 @@ namespace Paper_Scissors_Rock
                     Money += betAmount;
                     nudBet.Visible = true;
                     lblMoney.Text = ($"Money: ${Money}");
+                    userSelection = 0;
                 }
                 else if (playerWin == false)
                 {
@@ -124,6 +124,7 @@ namespace Paper_Scissors_Rock
                     Money -= betAmount;
                     nudBet.Visible = true;
                     lblMoney.Text = ($"Money: ${Money}");
+                    userSelection = 0;
                 }
                 botSelection = 0;
                 picPaper.BackColor = Color.Transparent;
@@ -205,6 +206,7 @@ namespace Paper_Scissors_Rock
                     Money += betAmount;
                     nudBet.Visible = true;
                     lblMoney.Text = ($"Money: ${Money}");
+                    userSelection = 0;
                 }
                 else if (playerWin == false)
                 {
@@ -213,6 +215,7 @@ namespace Paper_Scissors_Rock
                     Money -= betAmount;
                     nudBet.Visible = true;
                     lblMoney.Text = ($"Money: ${Money}");
+                    userSelection = 0;
                 }
                 botSelection = 0;
                 picPaper.BackColor = Color.Transparent;
@@ -246,6 +249,7 @@ namespace Paper_Scissors_Rock
                     Money += betAmount;
                     nudBet.Visible = true;
                     lblMoney.Text = ($"Money: ${Money}");
+                    userSelection = 0;
                 }
                 else if (playerWin == false)
                 {
@@ -254,6 +258,7 @@ namespace Paper_Scissors_Rock
                     Money -= betAmount;
                     nudBet.Visible = true;
                     lblMoney.Text = ($"Money: ${Money}");
+                    userSelection = 0;
                 }
                 botSelection = 0;
                 picPaper.BackColor = Color.Transparent;
@@ -287,6 +292,7 @@ namespace Paper_Scissors_Rock
                     nudBet.Value = 0;
                     nudBet.Visible = true;
                     lblMoney.Text = ($"Money: ${Money}");
+                    userSelection = 0;
                 }
                 botSelection = 0;
                 picPaper.BackColor = Color.Transparent;
@@ -316,6 +322,7 @@ namespace Paper_Scissors_Rock
                     nudBet.Value = 0;
                     nudBet.Visible = true;
                     lblMoney.Text = ($"Money: ${Money}");
+                    userSelection = 0;
                 }
                 botSelection = 0;
                 picPaper.BackColor = Color.Transparent;
@@ -345,6 +352,7 @@ namespace Paper_Scissors_Rock
                     nudBet.Value = 0;
                     nudBet.Visible = true;
                     lblMoney.Text = ($"Money: ${Money}");
+                    userSelection = 0;
                 }
                 botSelection = 0;
                 picPaper.BackColor = Color.Transparent;
@@ -490,6 +498,10 @@ namespace Paper_Scissors_Rock
         private void nudBet_ValueChanged(object sender, EventArgs e)
         {
             betAmount = Convert.ToDouble(nudBet.Value);
+            if (Convert.ToDouble(nudBet.Value) > Money)
+            {
+                nudBet.Value = nudBet.Value - (nudBet.Value - Convert.ToDecimal(Money));
+            }
         }
     }
 }
